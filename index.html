@@ -1,9 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore South Korea - Discover top destinations, delicious Korean food, and essential travel tips. A student guide by Mahaut Seo.">
+  <title>Discover South Korea - Premium Travel Guide</title>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <!-- 1. Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="navLogo">
+        <div class="logo-symbol"></div>
+        <span class="logo-text">KOREA.VOYAGE</span>
+      </a>
+      
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="food.html" class="nav-link">Food Guide</a></li>
+        <li><a href="tips.html" class="nav-link">Travel Tips</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+    </div>
+  </header>
 
+  <!-- 2. Hero Section -->
+  <section class="hero-section" style="background-image: url('assets/images/hero.jpg');" id="homeHero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Land of the Morning Calm</p>
+      <h1 class="hero-title">Experience the Spirit <br>of South Korea</h1>
+      <p class="hero-subtitle">Embark on an unforgettable journey through ancient dynasty palaces, vibrant modern streets, peaceful volcanic islands, and delicious culinary traditions.</p>
+      <div class="hero-buttons">
+        <a href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+        <a href="#welcome" class="btn btn-secondary">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Welcome & Introduction Section -->
+  <section class="section" id="welcome">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text reveal">
+          <p class="destination-location">Welcome to Korea</p>
+          <h3>A Harmonious Blend of Ancient Heritage and Futurism</h3>
+          <p>South Korea is a destination where the 5,000-year-old dynasty history stands side-by-side with futuristic sky-high architectures and digital innovations. Whether you seek the peaceful serenity of mountain temples or the neon-lit late-night energy of urban Seoul, Korea offers a sensory adventure like no other.</p>
+          <p>This travel website is designed as a student project to share the rich landscape, delicious local dishes, and practical navigation tips I've gathered while living as an exchange student at Konkuk University.</p>
+          
+          <!-- Badges for extra visual appeal -->
+          <div class="intro-badge-container">
+            <div class="intro-badge-card">
+              <div class="badge-num">5K+</div>
+              <div class="badge-label">Years of History</div>
+            </div>
+            <div class="intro-badge-card">
+              <div class="badge-num">15+</div>
+              <div class="badge-label">UNESCO Sites</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="intro-image-wrapper reveal reveal-delay-1">
+          <img src="assets/images/seoul.jpg" alt="Seoul Skyline and Namsan Tower at Night">
+          <div class="intro-image-caption">
+            <h4>Namsan Seoul Tower</h4>
+            <p>Rising above the city, offering panoramic evening views of Seoul's sprawling metropolis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Highlights Quick-Links Grid -->
+  <section class="section home-highlights" id="highlights">
+    <div class="container">
+      <h2 class="section-title reveal">Start Planning Your Journey</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Discover what makes South Korea one of the most exciting, safe, and culturally rich countries to travel to in the world.</p>
+      
+      <div class="highlights-grid">
+        <!-- Card 1: Destinations -->
+        <div class="highlight-card reveal">
+          <div class="highlight-icon">🗺️</div>
+          <h3>Top Destinations</h3>
+          <p>From the high-tech historic streets of Seoul to the peaceful coastal beaches of Busan and the volcanic landscapes of Jeju Island.</p>
+          <a href="destinations.html" class="highlight-link">Explore Cities &rarr;</a>
+        </div>
+        
+        <!-- Card 2: Culinary Guide -->
+        <div class="highlight-card reveal reveal-delay-1">
+          <div class="highlight-icon">🥢</div>
+          <h3>Gourmet Food Guide</h3>
+          <p>Dive into the legendary Korean kitchen. Experience healthy bibimbap, spicy tteokbokki, fermented kimchi, and sizzling interactive K-BBQ tables.</p>
+          <a href="food.html" class="highlight-link">Taste Korea &rarr;</a>
+        </div>
+        
+        <!-- Card 3: Essential Tips -->
+        <div class="highlight-card reveal reveal-delay-2">
+          <div class="highlight-icon">🚇</div>
+          <h3>Travel Tips & Phrases</h3>
+          <p>Get helpful transportation hacks, T-money card details, and learn key Korean greetings with interactive audio pronunciation guides.</p>
+          <a href="tips.html" class="highlight-link">Get Travel Hacks &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>
+            <div class="logo-symbol" style="display:inline-block; vertical-align:middle; width:20px; height:20px;"></div>
+            KOREA.VOYAGE
+          </h3>
+          <p>A modern travel guide celebrating the heritage, culinary diversity, and technological wonders of South Korea.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="Pinterest">PIN</a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="food.html">Korean Food Guide</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="about.html">About Me</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-credit-col">
+          <h4>About this Project</h4>
+          <p>Created for academic purposes by <strong>Mahaut Seo</strong>, exchange student at <strong>Konkuk University</strong>, Seoul.</p>
+          <span class="university-tag">Konkuk University Exchange 2026</span>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Korea.Voyage. All rights reserved. University project created with AI assistance.</p>
+        <p>Written in English | Designed with Hangeul Spirit</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Files -->
+  <script src="js/main.js"></script>
 </body>
 </html>
