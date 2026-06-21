@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View beautiful images of South Korean landmarks, local food, and scenery. Interactive photo gallery with filters and zoom views.">
+  <title>Photo Gallery - South Korea Scenery, Landmarks & Food</title>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="navLogo">
+        <div class="logo-symbol"></div>
+        <span class="logo-text">KOREA.VOYAGE</span>
+      </a>
+      
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="food.html" class="nav-link">Food Guide</a></li>
+        <li><a href="tips.html" class="nav-link">Travel Tips</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('assets/images/gallery_2.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container">
+      <h1>Photo Gallery</h1>
+      <p>A visual showcase of Korea's breathtaking historical heritage, culinary creations, and scenic nature paths.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filter Controls -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">Show All</button>
+        <button class="filter-btn" data-filter="culture">Culture & Landmarks</button>
+        <button class="filter-btn" data-filter="nature">Nature & Scenery</button>
+        <button class="filter-btn" data-filter="food">Korean Cuisine</button>
+      </div>
+      
+      <!-- Gallery Grid -->
+      <div class="gallery-grid reveal reveal-delay-1">
+        
+        <!-- Image 1 -->
+        <div class="gallery-item" data-category="culture">
+          <img src="assets/images/gallery_1.jpg" alt="Traditional Korean architecture Palace Gyeongbokgung">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Gyeongbokgung Palace</h3>
+            <p>Traditional Pavilion, Seoul</p>
+          </div>
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="gallery-item" data-category="nature">
+          <img src="assets/images/gallery_2.jpg" alt="Pink Cherry blossoms in full bloom in South Korea">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Cherry Blossoms</h3>
+            <p>Spring Season in Gyeongju</p>
+          </div>
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="gallery-item" data-category="culture">
+          <img src="assets/images/gallery_3.jpg" alt="Dongdaemun Design Plaza evening illumination">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Dongdaemun Design Plaza</h3>
+            <p>Neo-Futurist Architecture, Seoul</p>
+          </div>
+        </div>
+        
+        <!-- Image 4 -->
+        <div class="gallery-item" data-category="culture">
+          <img src="assets/images/gallery_4.jpg" alt="Korean temple roof detail under a blue sky">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Dancheong Roof Detail</h3>
+            <p>Traditional Temple Painting, Gyeongju</p>
+          </div>
+        </div>
+        
+        <!-- Image 5 -->
+        <div class="gallery-item" data-category="food">
+          <img src="assets/images/gallery_5.jpg" alt="Tteokbokki and fried skewers in a lively Korean night market">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Street Food Market</h3>
+            <p>Night Stall Energy, Seoul</p>
+          </div>
+        </div>
+        
+        <!-- Image 6 -->
+        <div class="gallery-item" data-category="nature">
+          <img src="assets/images/gallery_6.jpg" alt="Craggy ocean cliffs of Jeju Island under a twilight sky">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Jusangjeolli Cliff</h3>
+            <p>Volcanic Basalt Column Coast, Jeju</p>
+          </div>
+        </div>
+
+        <!-- Image 7 (Food) -->
+        <div class="gallery-item" data-category="food">
+          <img src="assets/images/bibimbap.jpg" alt="Premium Bibimbap mixed rice bowl">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Bibimbap Bowl</h3>
+            <p>Traditional Culinary Balance</p>
+          </div>
+        </div>
+
+        <!-- Image 8 (Nature) -->
+        <div class="gallery-item" data-category="nature">
+          <img src="assets/images/jeju.jpg" alt="Seongsan Ilchulbong tuff cone crater outline">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Seongsan Ilchulbong</h3>
+            <p>Volcanic Sunrise Peak, Jeju</p>
+          </div>
+        </div>
+
+        <!-- Image 9 (Food) -->
+        <div class="gallery-item" data-category="food">
+          <img src="assets/images/kbbq.jpg" alt="Sizzling meat grid at a Korean BBQ grill">
+          <div class="gallery-item-overlay">
+            <span class="gallery-zoom-icon">🔍</span>
+            <h3>Korean BBQ Grill</h3>
+            <p>Social Interactive Dining</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Markup -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption">Caption Text</div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>
+            <div class="logo-symbol" style="display:inline-block; vertical-align:middle; width:20px; height:20px;"></div>
+            KOREA.VOYAGE
+          </h3>
+          <p>A modern travel guide celebrating the heritage, culinary diversity, and technological wonders of South Korea.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="Pinterest">PIN</a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="food.html">Korean Food Guide</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="about.html">About Me</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-credit-col">
+          <h4>About this Project</h4>
+          <p>Created for academic purposes by <strong>Mahaut Seo</strong>, exchange student at <strong>Konkuk University</strong>, Seoul.</p>
+          <span class="university-tag">Konkuk University Exchange 2026</span>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Korea.Voyage. All rights reserved. University project created with AI assistance.</p>
+        <p>Written in English | Designed with Hangeul Spirit</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Files -->
+  <script src="js/main.js"></script>
+</body>
+</html>

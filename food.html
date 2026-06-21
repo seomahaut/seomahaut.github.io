@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover popular Korean dishes: Bibimbap, Kimchi, Korean BBQ, and Tteokbokki. Descriptions, flavor profiles, and interactive dining tips.">
+  <title>Korean Food Guide - Authentic Culinary Experiences</title>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="navLogo">
+        <div class="logo-symbol"></div>
+        <span class="logo-text">KOREA.VOYAGE</span>
+      </a>
+      
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+        <li><a href="food.html" class="nav-link active">Food Guide</a></li>
+        <li><a href="tips.html" class="nav-link">Travel Tips</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="about.html" class="nav-link">About Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('assets/images/gallery_5.jpg');">
+    <div class="page-banner-overlay"></div>
+    <div class="container">
+      <h1>Korean Food Guide</h1>
+      <p>A culinary journey exploring the distinct flavors, colors, and interactive dining rituals of traditional Korean cooking.</p>
+    </div>
+  </section>
+
+  <!-- Food Grid Content -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Korea's Legendary Flavors</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Korean cuisine is centered on balance, fermentation, and sharing. Discover four iconic dishes that define the local dining table.</p>
+      
+      <div class="food-grid">
+        
+        <!-- Dish 1: Bibimbap -->
+        <div class="food-card reveal">
+          <div class="food-img-wrapper">
+            <img src="assets/images/bibimbap.jpg" alt="Bibimbap in hot stone bowl with colorful vegetables">
+          </div>
+          <div class="food-body">
+            <div class="food-title-row">
+              <h2>Bibimbap</h2>
+              <span class="food-korean-name">비빔밥</span>
+            </div>
+            <p class="food-desc">A colorful, nourishing bowl of rice topped with carefully prepared seasoned vegetables, a protein (beef or tofu), a fried egg, and a dollop of spicy-sweet red pepper paste (gochujang).</p>
+            
+            <!-- Food Card Tabs -->
+            <div class="food-tabs">
+              <button class="food-tab-btn active" data-tab="flavor">Flavor</button>
+              <button class="food-tab-btn" data-tab="ingredients">Ingredients</button>
+              <button class="food-tab-btn" data-tab="etiquette">How to Eat</button>
+            </div>
+            
+            <div class="food-tab-pane active" data-pane="flavor">
+              <p>A perfect balance of textures and tastes. Sautéed savory beef, crunchy vegetables, earthy sesame oil, and a customizable kick of spicy-sweet gochujang paste.</p>
+            </div>
+            <div class="food-tab-pane" data-pane="ingredients">
+              <ul>
+                <li>Steamed white rice basis</li>
+                <li>Shiitake mushrooms, spinach, bean sprouts, carrots</li>
+                <li>Gochujang (Korean chili paste) & sesame oil</li>
+                <li>Raw or fried egg yolk</li>
+              </ul>
+            </div>
+            <div class="food-tab-pane" data-pane="etiquette">
+              <p>Do not eat the toppings individually! Pour a splash of sesame oil, add gochujang paste, and use your spoon to mix everything together vigorously until the egg yolk coats the rice and the color is uniform.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2: Kimchi -->
+        <div class="food-card reveal reveal-delay-1">
+          <div class="food-img-wrapper">
+            <img src="assets/images/kimchi.jpg" alt="Traditional spicy fermented Kimchi cabbage close up">
+          </div>
+          <div class="food-body">
+            <div class="food-title-row">
+              <h2>Kimchi</h2>
+              <span class="food-korean-name">김치</span>
+            </div>
+            <p class="food-desc">The absolute soul of Korean dining. Kimchi is a fermented side dish made primarily of salted napa cabbage or radishes, seasoned with chili powder, garlic, ginger, and green onions.</p>
+            
+            <!-- Food Card Tabs -->
+            <div class="food-tabs">
+              <button class="food-tab-btn active" data-tab="flavor">Flavor</button>
+              <button class="food-tab-btn" data-tab="ingredients">Ingredients</button>
+              <button class="food-tab-btn" data-tab="etiquette">How to Eat</button>
+            </div>
+            
+            <div class="food-tab-pane active" data-pane="flavor">
+              <p>Complex, pungent, sour, spicy, and full of umami. The depth of flavor increases as the fermentation matures over weeks or months, creating a sparkling, probiotic-rich crunch.</p>
+            </div>
+            <div class="food-tab-pane" data-pane="ingredients">
+              <ul>
+                <li>Napa cabbage or Korean radish</li>
+                <li>Gochugaru (coarse red pepper flakes)</li>
+                <li>Garlic, ginger, scallions, salted shrimp/fish sauce</li>
+                <li>Glutinous rice flour paste for seasoning adhesion</li>
+              </ul>
+            </div>
+            <div class="food-tab-pane" data-pane="etiquette">
+              <p>Kimchi is almost never eaten as a main meal by itself. It is served as a "banchan" (complimentary side dish) with every meal, paired with warm rice, or used to flavor stews (Kimchi Jjigae) and pancakes (Kimchijeon).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3: Korean BBQ -->
+        <div class="food-card reveal">
+          <div class="food-img-wrapper">
+            <img src="assets/images/kbbq.jpg" alt="Grilling sliced meat on an interactive Korean BBQ table">
+          </div>
+          <div class="food-body">
+            <div class="food-title-row">
+              <h2>Korean BBQ</h2>
+              <span class="food-korean-name">고기구이</span>
+            </div>
+            <p class="food-desc">An interactive, social dining experience where guests grill meats—most notably bulgogi (marinated beef strips) and samgyeopsal (pork belly)—on a charcoal or gas grill built right into the table.</p>
+            
+            <!-- Food Card Tabs -->
+            <div class="food-tabs">
+              <button class="food-tab-btn active" data-tab="flavor">Flavor</button>
+              <button class="food-tab-btn" data-tab="ingredients">Ingredients</button>
+              <button class="food-tab-btn" data-tab="etiquette">How to Eat</button>
+            </div>
+            
+            <div class="food-tab-pane active" data-pane="flavor">
+              <p>Rich, smoky, and deeply savory. Bulgogi offers a sweet-soy glaze flavor, while samgyeopsal is crispy, fatty, and enhanced by dipping sauces like ssamjang (soy-chili paste).</p>
+            </div>
+            <div class="food-tab-pane" data-pane="ingredients">
+              <ul>
+                <li>Marinated sirloin (Bulgogi) or thick pork belly (Samgyeopsal)</li>
+                <li>Ssamjang (fermented soybean and chili paste)</li>
+                <li>Lettuce leaves & perilla leaves for wraps</li>
+                <li>Slices of raw garlic, green chili, and green onion salad</li>
+              </ul>
+            </div>
+            <div class="food-tab-pane" data-pane="etiquette">
+              <p>Create a "ssam" (wrap)! Take a lettuce leaf, place a piece of grilled meat, add ssamjang paste, garlic, and scallion salad. Fold it into a small parcel and eat it in a single bite—stuffing it in parts is considered messy!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 4: Tteokbokki -->
+        <div class="food-card reveal reveal-delay-1">
+          <div class="food-img-wrapper">
+            <img src="assets/images/tteokbokki.jpg" alt="Spicy red Tteokbokki rice cakes in a plate">
+          </div>
+          <div class="food-body">
+            <div class="food-title-row">
+              <h2>Tteokbokki</h2>
+              <span class="food-korean-name">떡볶이</span>
+            </div>
+            <p class="food-desc">Korea's beloved street food comfort. It features chewy, cylinder-shaped white rice cakes cooked in a bright red, sweet and spicy sauce made from gochujang, often mixed with fish cakes and boiled eggs.</p>
+            
+            <!-- Food Card Tabs -->
+            <div class="food-tabs">
+              <button class="food-tab-btn active" data-tab="flavor">Flavor</button>
+              <button class="food-tab-btn" data-tab="ingredients">Ingredients</button>
+              <button class="food-tab-btn" data-tab="etiquette">How to Eat</button>
+            </div>
+            
+            <div class="food-tab-pane active" data-pane="flavor">
+              <p>Bold, intensely sweet, spicy, and satisfyingly chewy. The thickness of the rice starch creates a heavy, delicious glaze that clings to every element.</p>
+            </div>
+            <div class="food-tab-pane" data-pane="ingredients">
+              <ul>
+                <li>Garae-tteok (cylindrical thick rice cakes)</li>
+                <li>Eomuk (flat fish cakes)</li>
+                <li>Gochujang chili paste, sugar, and soy sauce glaze</li>
+                <li>Boiled eggs & green scallions</li>
+              </ul>
+            </div>
+            <div class="food-tab-pane" data-pane="etiquette">
+              <p>Grab a toothpick or skewer at a street cart ("pojangmacha") and poke a rice cake and fish cake together. It is commonly eaten with fried tempura (튀김) dipped directly in the leftover red tteokbokki sauce.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>
+            <div class="logo-symbol" style="display:inline-block; vertical-align:middle; width:20px; height:20px;"></div>
+            KOREA.VOYAGE
+          </h3>
+          <p>A modern travel guide celebrating the heritage, culinary diversity, and technological wonders of South Korea.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon" aria-label="Pinterest">PIN</a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Top Destinations</a></li>
+            <li><a href="food.html">Korean Food Guide</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="about.html">About Me</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-credit-col">
+          <h4>About this Project</h4>
+          <p>Created for academic purposes by <strong>Mahaut Seo</strong>, exchange student at <strong>Konkuk University</strong>, Seoul.</p>
+          <span class="university-tag">Konkuk University Exchange 2026</span>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Korea.Voyage. All rights reserved. University project created with AI assistance.</p>
+        <p>Written in English | Designed with Hangeul Spirit</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Files -->
+  <script src="js/main.js"></script>
+</body>
+</html>
